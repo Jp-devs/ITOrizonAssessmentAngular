@@ -1,0 +1,38 @@
+.jumbotron h1 {
+  text-align: center;
+}
+
+.app-body {
+  margin: 20px auto;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  padding: 16px;
+  text-align: center;
+}
+.parent-div {
+  border-bottom: 1px solid #ccc;
+}
+.file-div {
+  display: inline-block;
+  background-color: #e9ecef;
+  width: 350px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: left;
+  position: relative;
+  border-radius: 5px;
+}
+.file-div label {
+  cursor: pointer;
+  color: dodgerblue;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.file-div button {
+  position: absolute;
+  right: 20px;
+}
+.file-div .file-input {
+  display: none;
+}

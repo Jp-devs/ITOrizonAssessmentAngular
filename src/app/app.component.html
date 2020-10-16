@@ -1,0 +1,42 @@
+<div class="container">
+  <header>
+    <div class="jumbotron">
+      <h1>Musical Group Search</h1>
+    </div>
+  </header>
+
+  <div class="my-3 app-body">
+    <div class="row">
+      <div class="col-md-12">
+        <form method="post">
+          <div class="parent-div py-5">
+            <div class="file-div">
+              <label for="file-upload"> {{fileText}}
+                <input name="file-upload" id="file-upload" type="file" class="file-input" (change)="fileInputChanged($event)">
+              </label>
+              <button class="btn btn-primary" (click)="submitFile()">Upload</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-md-8">
+          <input type="text" name="search-box" id="search-box" class="form-control" [formControl]="searchControl">
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-primary" (click)="search()">Search</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+          Output Values: <br />
+          <p>
+            <span *ngFor="let item of resultValues">{{item}} </span>
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
